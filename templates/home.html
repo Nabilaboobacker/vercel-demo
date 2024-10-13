@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Futuristic Webpage</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">FUTURELOGO</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>SHAPING THE FUTURE, ONE IDEA AT A TIME</h1>
+        <p>Innovative. Clean. Forward.</p>
+        <a href="#" class="cta">GET STARTED</a>
+    </section>
+
+    <section id="about">
+        <div class="number">01</div>
+        <div class="content">
+            <h2>About Us</h2>
+            <p>We are a team of futurists, thinkers, and doers committed to designing clean, innovative solutions for the world of tomorrow.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <div class="icon">🚀</div>
+                <h3>Service One</h3>
+                <p>Cutting-edge solutions for modern problems.</p>
+            </div>
+            <div class="service-item">
+                <div class="icon">💡</div>
+                <h3>Service Two</h3>
+                <p>Innovative approaches to traditional systems.</p>
+            </div>
+            <div class="service-item">
+                <div class="icon">🌐</div>
+                <h3>Service Three</h3>
+                <p>Global connectivity for futuristic ventures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Futuristic Design. All rights reserved.</p>
+    </footer>
+</body>
+</html>

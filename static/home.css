@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #0f0f0f, #1f1f1f);
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.logo {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero {
+    padding: 100px 10%;
+}
+
+.hero h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #b0b0b0;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #fff;
+    color: #000;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+.number {
+    font-size: 6em;
+    color: #444;
+}
+
+.content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+#services {
+    padding: 50px 10%;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+#service-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+#service-item {
+    text-align: center;
+    width: 30%;
+}
+
+#service-item h3 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#service-item p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+}
+
+#contact {
+    padding: 50px 10%;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #1f1f1f;
+    border: none;
+    border-bottom: 2px solid #444;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+button {
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fff;
+    color: #000;
+}
+
+footer {
+    padding: 20px 10%;
+    border-top: 1px solid #444;
+    color: #b0b0b0;
+    font-size: 0.9em;
+}

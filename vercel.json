@@ -1,34 +1,27 @@
 {
-    "version": 2,
-    "name": "vercel_project",
-    "builds": [
-      {
-        "src": "vercel_project/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "vercel_project/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9"
       }
-    ],
-    "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/assets/$1"
-      },
-      {
-        "src": "/media/(.*)",
-        "dest": "/media/$1"
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "static"
       }
-    ],
-    "static": {
-      "src": "assets",
-      "dest": "/static"
-    },
-    "media": {
-      "src": "media",
-      "dest": "/media"
-    },
-    "env": {
-      "DJANGO_SETTINGS_MODULE": "vercel_project.settings",
-      "PYTHONUNBUFFERED": "1"
     }
-  }
-  
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "vercel_project/wsgi.py"
+    }
+  ],
+  "outputDirectory": "static"
+}
